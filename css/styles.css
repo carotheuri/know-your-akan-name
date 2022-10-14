@@ -1,0 +1,19 @@
+img{
+    max-width:100%;
+    height :130px;
+}
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+    
+}
+.navbar{
+    background-image: url("/images/akan.jpg");
+    /* opacity: 0.8; */
+    
+}
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color :#752643;
+}
