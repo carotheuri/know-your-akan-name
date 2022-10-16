@@ -2,13 +2,14 @@ const femaleAkanNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
 const maleAkanNames = ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame'];
 // const makeAkanNames = [];
 function calculateDayofWeek(){
-    confirm("Are you sure");
+    
     console.log("happy");
    
     validateUserDetails()
     //var dayOfWeek = 
 }
 function validateUserDetails(){
+    confirm("Are you sure");
     var day = document.getElementById("dayborn").value;
     var month = document.getElementById("monthborn").value;
     var year = document.getElementById("yearborn").value;
