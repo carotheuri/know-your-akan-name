@@ -1,4 +1,5 @@
 const femaleAkanNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
+const maleAkanNames = ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame'];
 // const makeAkanNames = [];
 function getUserDetails(){
     confirm("Are you sure");
