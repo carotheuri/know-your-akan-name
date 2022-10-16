@@ -1,12 +1,14 @@
 const femaleAkanNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
 const maleAkanNames = ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame'];
 // const makeAkanNames = [];
-function calculateDayofWeek(){
+function calculateDayofWeek(day,month,year){
     
     console.log("happy");
-   
-    validateUserDetails()
-    //var dayOfWeek = 
+    var century = year.toString();
+    century = century.substring(0,2);
+    console.log(century);
+    var dayOfWeek =  Math.floor(( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7);
+
 }
 function validateUserDetails(){
     confirm("Are you sure");
