@@ -1,9 +1,14 @@
 const femaleAkanNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
 const maleAkanNames = ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame'];
 // const makeAkanNames = [];
-function getUserDetails(){
+function calculateDayofWeek(){
     confirm("Are you sure");
     console.log("happy");
+   
+    validateUserDetails()
+    //var dayOfWeek = 
+}
+function validateUserDetails(){
     var day = document.getElementById("dayborn").value;
     var month = document.getElementById("monthborn").value;
     var year = document.getElementById("yearborn").value;
@@ -13,5 +18,14 @@ function getUserDetails(){
     }
     else{
         gender = "male";
+    }
+    if(day || month || year == "" ){
+        alert("Kindly provide all details,some are missing");
+    }
+    else if(day <= 0 || day >31 &&  month <=0 || month>12 ){
+        alert("Kindly provide valid details as suggested on the placeholders");
+    }
+    else {
+        calculateDayofWeek(day,month,year);
     }
 }
