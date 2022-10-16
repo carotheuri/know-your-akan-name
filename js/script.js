@@ -9,6 +9,7 @@ function calculateDayofWeek(day,month,year){
     console.log(century);
     var dayOfWeek =  Math.floor(( ( (century/4) -2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7);
 
+    console.log(dayOfWeek);
 }
 function validateUserDetails(){
     confirm("Are you sure");
@@ -31,4 +32,7 @@ function validateUserDetails(){
     else {
         calculateDayofWeek(day,month,year);
     }
+}
+function main(){
+    
 }
