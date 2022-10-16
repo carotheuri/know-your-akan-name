@@ -20,7 +20,7 @@ function validateUserDetails(){
     else{
         gender = "male";
     }
-    if(day || month || year == "" ){
+    if(day  == "" || month == "" || year == "" ){
         alert("Kindly provide all details,some are missing");
     }
     else if(day <= 0 || day >31 &&  month <=0 || month>12 ){
