@@ -1,4 +1,4 @@
-// const femaleAkanNames = [];
+const femaleAkanNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
 // const makeAkanNames = [];
 function getUserDetails(){
     confirm("Are you sure");
@@ -13,9 +13,4 @@ function getUserDetails(){
     else{
         gender = "male";
     }
-    
-    console.log(day);
-    console.log(month);
-    console.log(year);
-    console.log(gender);
 }
