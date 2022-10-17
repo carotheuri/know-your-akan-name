@@ -49,7 +49,7 @@ function assignUserakanname(calculatedday){
     else{
         gender = "male";
     }
-    if(gender == "female"){alert("female");
+    if(gender == "female"){
         var txtfield = document.getElementById("displaymsg");
         switch(calculatedday){
             case 0:
@@ -76,7 +76,6 @@ function assignUserakanname(calculatedday){
         form.reset();
     }    
     else{
-        alert("men");
         switch(calculatedday){
             case 0:
                 alert("Your Akan name is " +  maleAkanNames[0]);
