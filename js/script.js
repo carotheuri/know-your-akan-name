@@ -25,7 +25,7 @@ else{
 function calculateDayofWeekAlternative(year,month,day){
     var userDate = new Date(month+" "+day+" "+year);
     var dayOfWeek = userDate.getDay();
-    assignUserakanname(dayOfWeek); assignUserakanname(0);
+    assignUserakanname(dayOfWeek);
 
 }
 function validateUserDetails(){
