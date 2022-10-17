@@ -22,6 +22,14 @@ function calculateDayofWeek(year,month,day){
     console.log(dayOfWeek);
     assignUserakanname(dayOfWeek);
 }
+function calculateDayofWeekAlternative(year,month,day){
+    //"october 17, 2022 01:15:00"
+
+    var userDate = new Date(month+" "+day+" "+year);
+    let dayOfWeek = userDate.getDay();
+    assignUserakanname(dayOfWeek);
+
+}
 function validateUserDetails(){
     
     confirm("Are you sure");
@@ -41,7 +49,8 @@ function validateUserDetails(){
         day = parseInt(day);
         month = parseInt(month);
         year = parseInt(year);
-        calculateDayofWeek(year,month,day);
+        calculateDayofWeekAlternative(year,month,day)
+        //calculateDayofWeek(year,month,day);
     }
 }
 function assignUserakanname(calculatedday){
