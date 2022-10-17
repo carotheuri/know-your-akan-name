@@ -1,13 +1,7 @@
 const femaleAkanNames = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama'];
-const form  = document.getElementById('my_form');
 const maleAkanNames = ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame'];
-var gender = '';
-if(document.getElementById("female").checked = true){
-    gender = "female";
-}
-else{
-    gender = "male";
-}
+
+const form  = document.getElementById('my_form');
 
 // function calculateDayofWeek(year,month,day){
 //     year = year.toString();
@@ -48,8 +42,15 @@ function validateUserDetails(){
     }
 }
 function assignUserakanname(calculatedday){
-    var txtfield = document.getElementById("displaymsg");
-    if(gender == "female"){
+    var gender = '';
+    if(document.getElementById("female").checked == true){
+        gender = "female";
+    }
+    else{
+        gender = "male";
+    }
+    if(gender == "female"){alert("female");
+        var txtfield = document.getElementById("displaymsg");
         switch(calculatedday){
             case 0:
                 txtfield.innerText = "Your Akan name is " + femaleAkanNames[0];
@@ -75,6 +76,7 @@ function assignUserakanname(calculatedday){
         form.reset();
     }    
     else{
+        alert("men");
         switch(calculatedday){
             case 0:
                 alert("Your Akan name is " +  maleAkanNames[0]);
@@ -97,8 +99,9 @@ function assignUserakanname(calculatedday){
             case 6:
                 alert("Your Akan name is " + maleAkanNames[6]);
         }
+        form.reset();
     }
-    return;
+    
 }
 function main(){
     validateUserDetails();
