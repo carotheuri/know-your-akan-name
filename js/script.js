@@ -3,14 +3,13 @@ const testdays = ['monday','tuesday','wednesday','thursday','friday','saturday',
 const maleAkanNames = ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame'];
 var gender;
 function calculateDayofWeek(year,month,day){
-    
-
     year = year.toString();
     var century = year.substring(0,2);
     century = parseInt(century);
-    year = year.toString();
+    //year = year.toString();
     var yearlen = year.length;
     var yy = year.substring(yearlen-2,yearlen);
+    console.log(yy);
     yy = parseInt(yy);
     var dayOfWeek =  Math.floor((((century/4) -2*century-1) + ((5*yy/4) ) + ((26*(month+1)/10)) + day) % 7);
     console.log(dayOfWeek);
@@ -43,54 +42,57 @@ function assignUserakanname(calculatedday){
     if(gender == "female"){
         switch(calculatedday){
             case 0:
-                alert(femaleAkanNames[0]);
+                alert("Your Akan name is " + femaleAkanNames[0]);
             break;
             case 1:
-                alert(femaleAkanNames[1]);
+                alert("Your Akan name is " + femaleAkanNames[1]);
             break;
             case 2:
-                alert(femaleAkanNames[2]);
+                alert("Your Akan name is " + femaleAkanNames[2]);
             break;
             case 3:
-                alert(femaleAkanNames[3]);
+                alert("Your Akan name is " + femaleAkanNames[3]);
             break;
             case 4:
-                alert(femaleAkanNames[4]);
+                alert("Your Akan name is " + femaleAkanNames[4]);
             break;
             case 5:
-                alert(femaleAkanNames[5]);
+                alert("Your Akan name is " + femaleAkanNames[5]);
             break;
             case 6:
-                alert(femaleAkanNames[6]);
+                alert("Your Akan name is " + femaleAkanNames[6]);
             break;
+            default:
+                alert("we could not find your name");
         }
+    }    
+    else{
         switch(calculatedday){
             case 0:
-                alert(maleAkanNames[0]);
+                alert("Your Akan name is " +  maleAkanNames[0]);
             break;
             case 1:
-                alert(maleAkanNames[1]);
+                alert("Your Akan name is " + maleAkanNames[1]);
             break;
             case 2:
-                alert(maleAkanNames[2]);
+                alert("Your Akan name is " + maleAkanNames[2]);
             break;
             case 3:
-                alert(maleAkanNames[3]);
+                alert("Your Akan name is " + maleAkanNames[3]);
             break;
             case 4:
-                alert(maleAkanNames[4]);
+                alert("Your Akan name is " + maleAkanNames[4]);
             break;
             case 5:
-                alert(maleAkanNames[5]);
+                alert("Your Akan name is " + maleAkanNames[5]);
             break;
             case 6:
-                alert(maleAkanNames[6]);
+                alert("Your Akan name is " + maleAkanNames[6]);
             break;
+            default:
+                alert("we could not find your name");
         }
     }
-    
-    
-    
 }
 function main(){
     validateUserDetails();
