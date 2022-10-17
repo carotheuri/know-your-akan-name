@@ -12,7 +12,7 @@ function calculateDayofWeek(year,month,day){
     var yearlen = year.length;
     var yy = year.substring(yearlen-2,yearlen);
     yy = parseInt(yy);
-    var dayOfWeek =  Math.round((((century/4) -2*century-1) + ((5*yy/4) ) + ((26*(month+1)/10)) + day) % 7);
+    var dayOfWeek =  Math.floor((((century/4) -2*century-1) + ((5*yy/4) ) + ((26*(month+1)/10)) + day) % 7);
     console.log(dayOfWeek);
     assignUserakanname(dayOfWeek);
 }
@@ -62,6 +62,29 @@ function assignUserakanname(calculatedday){
             break;
             case 6:
                 alert(femaleAkanNames[6]);
+            break;
+        }
+        switch(calculatedday){
+            case 0:
+                alert(maleAkanNames[0]);
+            break;
+            case 1:
+                alert(maleAkanNames[1]);
+            break;
+            case 2:
+                alert(maleAkanNames[2]);
+            break;
+            case 3:
+                alert(maleAkanNames[3]);
+            break;
+            case 4:
+                alert(maleAkanNames[4]);
+            break;
+            case 5:
+                alert(maleAkanNames[5]);
+            break;
+            case 6:
+                alert(maleAkanNames[6]);
             break;
         }
     }
