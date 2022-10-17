@@ -37,8 +37,6 @@ function validateUserDetails(){
     var month = document.getElementById("monthborn").value;
     var year = document.getElementById("yearborn").value;
     
-    console.log(day,month,year);
-    
     if(day  == " " || month == "" || year == ""){
         alert("Kindly provide all details,some are missing");
     }
@@ -49,8 +47,7 @@ function validateUserDetails(){
         day = parseInt(day);
         month = parseInt(month);
         year = parseInt(year);
-        calculateDayofWeekAlternative(year,month,day)
-        //calculateDayofWeek(year,month,day);
+        calculateDayofWeekAlternative(year,month,day);
     }
 }
 function assignUserakanname(calculatedday){
