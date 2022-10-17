@@ -23,15 +23,12 @@ else{
 //     assignUserakanname(dayOfWeek);
 // }
 function calculateDayofWeekAlternative(year,month,day){
-    //"october 17, 2022 01:15:00"
-
     var userDate = new Date(month+" "+day+" "+year);
     var dayOfWeek = userDate.getDay();
     assignUserakanname(dayOfWeek); assignUserakanname(0);
 
 }
 function validateUserDetails(){
-    
     confirm("Are you sure");
     var day = document.getElementById("dayborn").value;
     var month = document.getElementById("monthborn").value;

@@ -7,11 +7,6 @@ img{
     padding-right: 10px;
     
 }
-.navbar{
-    background-image: url("/images/akan.jpg");
-    /* opacity: 0.8; */
-    
-}
 #intro{
     font-family: Lucida Handwriting;
 }
@@ -24,9 +19,6 @@ h1{
     /* padding-left: 10px;
     padding-right: 10px; */
     margin-left:10px;
-}
-#sbmt{
-    background-image: url("/images/akan.jpg");
 }
 .card-body{
     text-align: center;
