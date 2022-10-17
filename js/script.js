@@ -42,7 +42,7 @@ function validateUserDetails(){
     if(day  == " " || month == "" || year == ""){
         alert("Kindly provide all details,some are missing");
     }
-    else if(day <= 0 || day >31 &&  month <=0 || month>12 ){
+    else if(day <= 0 || day >31 ||  month <=0 || month>12 ){
         alert("Kindly provide valid details as suggested on the placeholders");
     }
     else {
