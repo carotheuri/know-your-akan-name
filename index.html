@@ -15,7 +15,7 @@
             <div class="container-fluid">
                 <h1>Know your akan Name ??</h1>
                 <hr class="my-1">
-                <p>So what is an akan name? Akan names come from a traditional naming system for people from countries such as Togo, Ivory Coast and Ghana. A child's name is determined by factors surrounding his or her birth or the day of the week born</p>
+                <p id="intro">So what is an akan name? Akan names come from a traditional naming system for people from countries such as Togo, Ivory Coast and Ghana. A child's name is determined by factors surrounding his or her birth or the day of the week born</p>
                 <p>To use this application follow the below steps</p>
             </div>
             <!-- detailed description of what the application does -->
@@ -38,32 +38,53 @@
                     <div class="col-md-4">
                         <div class="card">
                             <div class="card-body">
-                                <p>Step 3: View your ankan nam </p>
+                                <p>Step 3: View your ankan name</p>
                             </div>
                         </div>
                     </div>
                 </div><br>
             </div>
              <!-- end of detailed description of what the application does -->
-            <form>
-                <div container-fluid>
+            <form id="my_form">
+                <div class="container-fluid">
+                    <!-- day born -->
                     <div class="row">
-                        <div class="col-md-3">
-                            <label for="dayborn" class="form-label">Enter the day you were born</label>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
+                            <badge for="dayborn" class="form-label">Enter the day you were born</badge>
                             <input type="number" class="form-control" id="dayborn" required>
                             <p class="form-text">Kindly enter any day between 1 and 31 of a calendar month</p>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4"></div>
+                    </div>
+                    <!-- month born -->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="/images/ankarawoman.jpg" alt="ankarawoman"> 
+                        </div>
+                        <div class="col-md-4">
                             <label for="monthborn" class="form-label">Enter the month you were born</label>
                             <input type="number" class="form-control" id="monthborn" required>
                             <p class="form-text">Kindly enter any month between 1 and 12 of calendar month of a year</p>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4">
+                            <p id ="displaymsg" style="float:right;font-size:xx-large;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></p>
+                        </div>
+                    </div>
+                    <!-- year born -->
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
                             <label for="yearborn" class="form-label">Enter the year you were born</label>
                             <input type="number" class="form-control" id="yearborn" required>
                             <p class="form-text">Kindly enter the year in the format yyyy i.e 1986</p>
                         </div>
-                        <div class="col-md-3">
+                        <div class="col-md-4"></div>
+                    </div>
+                    <!-- select gender -->
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4">
                             <p>Selct your gender:</p>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="gender"  id="female">
@@ -74,9 +95,13 @@
                                 <label class="form-check-label" for="male">Male</label>
                             </div>
                         </div>
+                        <div class="col-md-4"></div>
                     </div>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-success" type="submit" onclick="main()" >Submit</button>
+                    <div class="container-fluid" id="sbmt">
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-success" type="button" onclick="main()" >Submit</button>
+                        </div>
+                        <br>
                     </div>
                 </div>
             </form>
