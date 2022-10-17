@@ -12,7 +12,8 @@ function calculateDayofWeek(year,month,day){
     var yearlen = year.length;
     var yy = year.substring(yearlen-2,yearlen);
     yy = parseInt(yy);
-    var dayOfWeek =  Math.floor((((century/4) -2*century-1) + ((5*yy/4) ) + ((26*(month+1)/10)) + day) % 7);
+    var dayOfWeek =  Math.round((((century/4) -2*century-1) + ((5*yy/4) ) + ((26*(month+1)/10)) + day) % 7);
+    console.log(dayOfWeek);
     assignUserakanname(dayOfWeek);
 }
 function validateUserDetails(){
